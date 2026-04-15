@@ -7,7 +7,7 @@
 * SelectedSearchMode - the currently selected search mode
 */}}
 <div class="ui small fluid action input">
-	{{template "shared/search/input" dict "Value" .Value "Disabled" .Disabled "Placeholder" .Placeholder}}
+	{{template "shared/search/input" dict "Value" .Value "Disabled" .Disabled "Placeholder" .Placeholder "Autofocus" .Autofocus}}
 	{{if .SearchModes}}
 		{{$selected := index .SearchModes 0}}
 		{{range $mode := .SearchModes}}
